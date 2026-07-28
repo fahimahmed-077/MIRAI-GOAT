@@ -19,27 +19,27 @@ module.exports.run = async function ({ api, event }) {
 ╔═══════════════✿
 ║ ✨ 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 ✨
 ╠═══════════════✿
-║ 👑 𝗡𝗮𝗺𝗲 : 𝗥𝗮𝗵𝗮𝘁 𝗜𝘀𝗹𝗮𝗺
-║ 🧸 𝗡𝗶𝗰𝗸 𝗡𝗮𝗺𝗲 : 𝗥𝗮𝗵𝗮𝘁
+║ 👑 𝗡𝗮𝗺𝗲 : 𝗙𝗔𝗛𝗜𝗠 𝗜𝘀𝗹𝗮𝗺
+║ 🧸 𝗡𝗶𝗰𝗸 𝗡𝗮𝗺𝗲 : 𝗙𝗔𝗛𝗜𝗠
 ║ 🎂 𝗔𝗴𝗲 : 16
 ║ 💘 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 : 𝗦𝗶𝗻𝗴𝗹𝗲
 ║ 🎓 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻 : 𝗦𝘁𝘂𝗱𝗲𝗻𝘁
-║ 🏡 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 : 𝗝𝗮𝗺𝗮𝗹𝗽𝘂𝗿
+║ 🏡 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 : 𝗗𝗛𝗔𝗞𝗔
 ╠═══════════════✿
 ║ 🔗 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞𝗦
 ╠═══════════════✿
 ║ 📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 :
-║ fb.com/61582708907708
+║ fb.com/61591571863767
 ║ 💬 𝗠𝗲𝘀𝘀𝗲𝗻𝗴𝗲𝗿 :
-║ m.me/61582708907708
+║ m.me/61591571863767
 ╚═══════════════✿
 `;
 
   const images = [
-    "https://i.imgur.com/G8wZwUB.jpeg",
-    "https://i.imgur.com/942vNzR.jpeg",
-    "https://i.imgur.com/viT3o6b.jpeg",
-    "https://i.imgur.com/btn02Xz.jpeg"
+    "https://i.imgur.com/kAvKTFG.jpeg",
+    "https://i.imgur.com/IdfQxpN.jpeg",
+    "https://i.imgur.com/BiBaoK8.jpeg",
+    "https://i.imgur.com/WFWVQsI.jpeg"
   ];
 
   const randomImg = images[Math.floor(Math.random() * images.length)];
