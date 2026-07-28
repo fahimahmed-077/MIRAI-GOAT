@@ -180,14 +180,14 @@ module.exports.run = async ({ api, event, args }) => {
   } 
   else {
       return api.sendMessage(
-          `❌যাকে চিপা থেকে বের করতে চাও তাকে ম্যানশন করো\n!mention 6 @Rahat Islam\n!mention 6 [uid]`,
+          `❌যাকে চিপা থেকে বের করতে চাও তাকে ম্যানশন করো\n!mention 6 @Fahim Islam\n!mention 6 [uid]`,
           threadID,
           messageID
       );
   }
 
   if (!target) {
-      return api.sendMessage("❌ইউজার ডিটেক্ট করা যায়নি!\n!mention 6 @Rahat Islam\n!mention 6 [uid]", threadID, messageID);
+      return api.sendMessage("❌ইউজার ডিটেক্ট করা যায়নি!\n!mention 6 @Fahim Islam\n!mention 6 [uid]", threadID, messageID);
   }
 
   // Get user name if not already got (for user type)
