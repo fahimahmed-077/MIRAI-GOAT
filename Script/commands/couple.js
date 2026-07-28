@@ -109,7 +109,7 @@ module.exports.run = async function ({ event, api, args }) {
     } else {
         // No target specified
         return api.sendMessage(
-            "❌রাহাদ বসকে ডাক দে🫩\nকীভাবে কমান্ড ব্যবহার করতে হয় শিখায় দিবো🥴",
+            "❌ফাহিম বসকে ডাক দে🫩\nকীভাবে কমান্ড ব্যবহার করতে হয় শিখায় দিবো🥴",
             threadID, messageID
         );
     }
