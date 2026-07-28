@@ -1,46 +1,34 @@
-module.exports.config = {
-	name: "unsend",
-	version: "1.2.0",
-	hasPermssion: 0,
-	credits: "rX",
-	description: "react 😡 to unsent",
-	commandCategory: "system",
-	usages: "unsend",
-	cooldowns: 0
-};
-
-module.exports.languages = {
-	"vi": {
-		"returnCant": "Không thể gỡ tin nhắn của người khác.",
-		"missingReply": "Hãy reply tin nhắn cần gỡ."
-	},
-	"en": {
-		"returnCant": "",
-		"missingReply": "Mere Jis Msg ko Unsend Karna Hai Usme Reply Karke Likkho."
-	}
-}
-
-// 1️⃣ Command-based unsend
-module.exports.run = function({ api, event, getText }) {
-	if (event.type != "message_reply") return api.sendMessage(getText("missingReply"), event.threadID, event.messageID);
-	if (event.messageReply.senderID != api.getCurrentUserID()) return api.sendMessage(getText("returnCant"), event.threadID, event.messageID);
-	return api.unsendMessage(event.messageReply.messageID);
-}
-
-// 2️⃣ Emoji-only trigger unsend
-module.exports.handleEvent = async function({ api, event }) {
-	const botID = api.getCurrentUserID();
-	if (event.senderID != botID) return;
-
-	// Allowed emojis
-	const allowedEmojis = ["🔪", "🐣", "🤬", "😡"];
-
-	// Body exists and exactly one of allowed emojis
-	if (event.body && allowedEmojis.includes(event.body.trim())) {
-		try {
-			await api.unsendMessage(event.messageID);
-		} catch(e) {
-			console.log("Cannot unsend message:", e);
+module.exports = {
+	config: {
+		name: "unsend",
+		aliases: ["u", "uns", "r"],
+		version: "1.2",
+		author: "NTKhang",
+		countDown: 5,
+		role: 0,
+		description: {
+			vi: "Gỡ tin nhắn của bot",
+			en: "Unsend bot's message"
+		},
+		category: "box chat",
+		guide: {
+			vi: "reply tin nhắn muốn gỡ của bot và gọi lệnh {pn}",
+			en: "reply the message you want to unsend and call the command {pn}"
 		}
+	},
+
+	langs: {
+		vi: {
+			syntaxError: "Vui lòng reply tin nhắn muốn gỡ của bot"
+		},
+		en: {
+			syntaxError: "Please reply the message you want to unsend"
+		}
+	},
+
+	onStart: async function ({ message, event, api, getLang }) {
+		if (!event.messageReply || event.messageReply.senderID != api.getCurrentUserID())
+			return message.reply(getLang("syntaxError"));
+		message.unsend(event.messageReply.messageID);
 	}
-}
+};
