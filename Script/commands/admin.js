@@ -176,7 +176,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
                     "Example:\n" +
                     "- admin add @John Doe\n" +
                     "- admin add (reply to message)\n" +
-                    "- admin add 1000123456789\n" +
+                    "- admin add 61591571863767\n" +
                     "- admin add https://facebook.com/username",
                     threadID, messageID
                 );
