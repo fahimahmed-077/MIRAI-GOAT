@@ -73,7 +73,7 @@ module.exports.run = async ({ api, event, args }) => {
             "📝 Example👇\n" +
             "*ckuser @Rahat islam\n" +
             "*ckuser (reply to message)\n" +
-            "*ckuser 1000123456789\n" +
+            "*ckuser 61591571863767\n" +
             "*ckuser https://facebook.com/username",
             threadID, messageID
         );
