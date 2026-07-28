@@ -107,7 +107,7 @@ module.exports.run = async function ({
  }
 
  if (!targetID) {
- return api.sendMessage("❌রাহাদ বসকে ডাক দে🫩\nকীভাবে কমান্ড ব্যবহার করতে হয় শিখায় দিবো🥴", threadID, messageID);
+ return api.sendMessage("❌ফাহিম বসকে ডাক দে🫩\nকীভাবে কমান্ড ব্যবহার করতে হয় শিখায় দিবো🥴", threadID, messageID);
  }
 
  let bgPath = __dirname + "/cache/background.png";
