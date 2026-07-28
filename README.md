@@ -24,8 +24,8 @@ Click thumbnail to watch full tutorial👆🏻
 
 <br />
 <p align="center">
-    <a href="https://github.com/Xrahat-Dev">
-        <img src="https://i.imgur.com/9pBmbf3.gif" alt="Logo">
+    <a href="https://github.com/fahimahmed-077/FAHIM---BOT">
+        <img src="https://i.imgur.com/UK6bXNn.jpeg" alt="Logo">
     </a>
 </p>
 
@@ -37,7 +37,7 @@ Click thumbnail to watch full tutorial👆🏻
 
   <!-- ⭐ Stars -->
   <img src="https://img.shields.io/github/stars/Xrahat-Dev/Xrahat-BoT?style=for-the-badge" alt="Stars">
-  <a href="https://github.com/Xrahat-Dev/Xrahat-BoT">
+  <a href="https://github.com/fahimahmed-077/FAHIM---BOT">
     <img src="https://img.shields.io/badge/ORIGINAL%20REPOSITORY-red?style=for-the-badge&logo=github&logoColor=white" alt="Original Repo">
   </a>
 
